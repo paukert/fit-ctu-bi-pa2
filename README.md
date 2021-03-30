@@ -1,4 +1,9 @@
-# Engine pro textové RPG
+# Engine for text based RPG (gamebook) 
+Programming and Algorithmics 2 course at FIT CTU (2019/2020).
+
+Detailed description is written only in Czech.
+
+## Engine pro textové RPG
 
 Autor: Lukáš Paukert
 
