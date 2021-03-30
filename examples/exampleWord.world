@@ -1,0 +1,133 @@
+Example game
+Lukas Paukert
+CREATING_CHARACTER
+5
+
+4
+    1
+        Living room
+        You live in a small cottage in the mountains. Yesterday, you got message from your cousin Eliska who should get married Jirka soon. You want to take part in weeding ceremony but the way to the castle is not easy at all. You have to go through dark forest and canyon where wizards and monsters live.
+        0
+        1
+            1
+                Knife
+                20
+                0
+        3
+            1
+                TRAVEL
+                2
+                0
+                Go to the bedroom
+                true
+            2
+                TRAVEL
+                3
+                0
+                Leave the house and go to the forest
+                true
+            3
+                PICK_UP
+                1
+                0
+                Pick up knife
+                true
+    2
+        Bedroom
+        You are in your bedroom. You found few items in box which may help you on your journey.
+        0
+        2
+            1
+                Necklace
+                0
+                20
+            2
+                Dagger
+                20
+                10
+        3
+            1
+                TRAVEL
+                1
+                0
+                Go to the living room
+                true
+            2
+                PICK_UP
+                2
+                0
+                Pick up dagger
+                true
+            3
+                PICK_UP
+                1
+                0
+                Pick up necklace from grandmother
+                true
+    3
+        Forest
+        You are in the forest. You spotted wizard behind one tree. You can either run away to canyon or try to fight with him. If you win, you may get some reward.
+        1
+            1
+                WIZARD
+                Irius
+                100
+                40
+        1
+            1
+                Sword
+                40
+                20
+        3
+            1
+                TRAVEL
+                4
+                0
+                Continue on your way to the canyon
+                true
+            2
+                FIGHT
+                1
+                1
+                    3
+                Fight wizard Irius
+                true
+            3
+                PICK_UP
+                1
+                0
+                Pick up sword
+                false
+    4
+        Canyon
+        You are in the canyon. The castle is just few miles away but there is one problem. There is one monster on the way, which you have to pass. There is no other way than fight him.
+        1
+            1
+                MONSTER
+                Cryptbeast
+                180
+                35
+        0
+        3
+            1
+                TRAVEL
+                5
+                0
+                Go to the castle
+                false
+            2
+                TRAVEL
+                3
+                0
+                Go to back to forest
+                true
+            3
+                FIGHT
+                1
+                1
+                    1
+                Fight with cryptbeast
+                true
+
+5
+60

@@ -1,0 +1,70 @@
+/**
+ * Game displays only 10 game (save) files
+ * Player always starts at location ID 1
+ * Player can split max 500 points
+ * Maximum count of options per location is 5
+ * Maximum inventory size is 10
+ * Maximum length of game name and author name is 40 chars each
+ * Maximum length of location name is 50 chars
+ * Maximum length of location text is 800 chars
+ * Maximum length of option text 70 chars
+ * Maximum length of item name is 40 chars
+ */
+
+Name of the game
+Author of the game
+Game status
+End location
+
+Number of locations
+
+    [Location ID
+        Location title
+        Location text
+
+        Number of creatures on this location
+            [Creature ID
+                Creature type
+                Creature name
+                Creature health
+                Creature strength
+            ]
+            ...
+
+        Number of items on this location
+            [Item ID
+                Item name
+                Item strength
+                Item luck
+            ]
+            ...
+
+        Number of options to choose from connected to this location
+            [Option ID
+                Option type
+                Target (location ID, entity ID, item ID)
+                Number of rewards after successful fight
+                Rewards = option(s) ID(s) which should be visible
+                Text which will be displayed
+                Bool if option should be displayed
+            ]
+            ...
+    ]
+    ...
+
+Player health
+Player strength
+Player luck
+Player position
+Inventory size
+Number of owned items
+    [Item name
+        Item strength
+        Item luck
+    ]
+    ...
+Equipped item index
+
+[ If this is NOT save file ]
+Inventory size
+Number of skill points to split
